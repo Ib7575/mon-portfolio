@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --couleur-arrière-plan: #11151e;
+    --couleur-texte: #fff;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--couleur-arrière-plan);
+    box-shadow: 0 0 25px rgba(134, 29, 199, 0.863);
+}
+
+.logo p span{
+    font-size: 40px;
+    -webkit-text-stroke: 2px #9a2bf5;
+    color: #2f2f2f94;
+    
+}
+.logo p{
+    font-size: 50px;
+    font-family: "Dancing Script", cursive;
+    font-weight: 900;
+    color: var(--couleur-texte);
+}
+.nav{
+    display: flex;
+    align-items: center;
+}
+.nav li{
+    list-style: none;
+}
+.nav li a{
+    text-decoration: none;
+    padding: 10px;
+    color: var(--couleur-texte);
+}
+.nav li a:hover{
+    border-bottom: 3px solid #9a2bf5;
+    color: #fff;
+    transform: scale(2);
+}
+.btn-contact{
+    text-decoration: none;
+    color: var(--couleur-texte);
+    border: 2px solid #9a2bf5;
+    background-color: transparent;
+    padding: 10px;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+.btn-contact:hover{
+    background-color: #9a2bf5;
+    opacity: 0.8;
+    color: #fff;
+    box-shadow: 0 0 25px rgba(134, 29, 199, 0.863);
+    transform: scale(1.1);
+}
+.home{
+    margin-top: 60px;
+    height:calc(100vh - 5px);
+    background: linear-gradient(rgba(0, 0, 0, 0.1),#000000),url(/images/bg1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.home h2{
+    font-size: 50px;
+    -webkit-text-stroke: 2px #9a2bf5;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.home p{
+    margin: 20px 0 20px 0;
+    max-width:450px;
+    color: #fff;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: bold;
+}
+.btn-plus{
+    color: #9a2bf5;
+    opacity: 0.8;
+}
+#propos{
+    background: linear-gradient(rgba(17, 31, 63, 0.957), var(--couleur-arrière-plan));
+}
+.apropos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-top: 90px; */
+    height: 700px;
+    padding: 0 80px 0 100px;
+    position: relative;
+}
+#entete-apropos{
+    position: relative;
+    padding: 50px 0 0 50px;
+    text-transform: uppercase;
+}
+#entete-apropos::after{
+    position: absolute;
+    content: "";
+    width: 5px;
+    top: 59px;
+    bottom: 0;
+    left: 40px;
+    height: 30px;
+    background: #000;
+    transition: 0.3s;
+}
+#entete-apropos:hover{
+    color: #9a2bf5;
+    cursor: pointer;
+    transform: scaleZ(1.1);
+}
+.apropos p{
+    max-width: 450px;
+    font-size: 20px;
+}
+.apropos img{
+    
+}
+.apropos p{
+    color: #fff;
+}
+.apropos h2{
+    color: #7e7d7d;
+}
+.desc h2 span{
+    font-size: 45px;
+    text-transform: uppercase;
+    color: var(--couleur-texte);
+    text-shadow: 5px 0 5px #a94ecd;
+    -webkit-text-stroke: 4px #8c07f9be;
+}
+.desc a{
+    border: 2px solid #a94ecd;
+    padding: 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    margin-top: 50px;
+    background: #a94ecd;
+    color: var(--couleur-texte);
+    transition: 0.3s;
+}
+.desc a:hover{
+    box-shadow: 0 0 50px rgba(134, 29, 199, 0.863);
+    transform: scale(1.1);
+}
+.img-apropos{
+    border: 5px solid none;
+    border-radius: 50%;
+    background: url(/images/ibrahima.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 350px;
+    box-shadow: 0 0 30px #b700ff;
+    background-color: #d980fc7d;
+}
