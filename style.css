@@ -13,6 +13,8 @@ body{
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
+    background: linear-gradient(rgba(17, 31, 63, 0.957), var(--couleur-arrière-plan));
+    background: linear-gradient(rgba(17, 31, 63, 0.957), var(--couleur-arrière-plan));
 }
 header{
     display: flex;
@@ -73,8 +75,8 @@ header{
     transform: scale(1.1);
 }
 .home{
-    margin-top: 60px;
-    height:calc(100vh - 5px);
+    margin: 60px 0 80px 0;
+    height:calc(100vh - 60px);
     background: linear-gradient(rgba(0, 0, 0, 0.1),#000000),url(/images/bg1.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -105,34 +107,37 @@ header{
     opacity: 0.8;
 }
 #propos{
-    background: linear-gradient(rgba(17, 31, 63, 0.957), var(--couleur-arrière-plan));
+    /* background: linear-gradient(rgba(17, 31, 63, 0.957), var(--couleur-arrière-plan)); */
 }
 .apropos{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* margin-top: 90px; */
-    height: 700px;
+    margin-bottom: 90px;
+    height: calc(100vh - 50px);
     padding: 0 80px 0 100px;
     position: relative;
 }
-#entete-apropos{
+#titre-apropos{
     position: relative;
     padding: 50px 0 0 50px;
     text-transform: uppercase;
+    text-decoration: none;
+    font-size: 40px;
+    color: #fff;
 }
-#entete-apropos::after{
+#titre-apropos::after{
     position: absolute;
     content: "";
     width: 5px;
-    top: 59px;
+    top: 65px;
     bottom: 0;
     left: 40px;
     height: 30px;
-    background: #000;
+    background: #9a2bf5;
     transition: 0.3s;
 }
-#entete-apropos:hover{
+#titre-apropos:hover{
     color: #9a2bf5;
     cursor: pointer;
     transform: scaleZ(1.1);
@@ -141,15 +146,14 @@ header{
     max-width: 450px;
     font-size: 20px;
 }
-.apropos img{
-    
-}
+
 .apropos p{
     color: #fff;
 }
 .apropos h2{
     color: #7e7d7d;
 }
+
 .desc h2 span{
     font-size: 45px;
     text-transform: uppercase;
@@ -157,18 +161,55 @@ header{
     text-shadow: 5px 0 5px #a94ecd;
     -webkit-text-stroke: 4px #8c07f9be;
 }
-.desc a{
+.social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+}
+.social-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: absolute; */
+    left: 0;
+    /* font-size: 30px; */
+    border: 2px solid none;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    text-decoration: none;
+}
+.social-icon:nth-child(1){
+    color: #fff;
+    background: #1877F2;
+}
+.social-icon:nth-child(2){
+    color: #fff;
+    background: #1DA1F2;
+}
+.social-icon:nth-child(3){
+    color: #fff;
+    background: #333333;
+}
+.social-icon:nth-child(4){
+    color: #fff;
+    background: #0077B5;
+}
+
+.btn-telecharger{
     border: 2px solid #a94ecd;
     padding: 20px;
     border-radius: 50px;
     text-decoration: none;
-    margin-top: 50px;
+    margin-top: 20px;
     background: #a94ecd;
     color: var(--couleur-texte);
     transition: 0.3s;
 }
-.desc a:hover{
-    box-shadow: 0 0 50px rgba(134, 29, 199, 0.863);
+.btn-telecharger:hover{
+    box-shadow: 0 0 30px rgba(134, 29, 199, 0.863);
     transform: scale(1.1);
 }
 .img-apropos{
@@ -182,4 +223,7 @@ header{
     width: 350px;
     box-shadow: 0 0 30px #b700ff;
     background-color: #d980fc7d;
+}
+#expli{
+    margin-bottom: 50px;
 }

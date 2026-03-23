@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 <body>
     <header>
@@ -26,24 +28,54 @@
         <a href="#" class="btn-contact btn-plus">Lire plus</a>
     </section>
     <section id="propos">
-        <h1 id="entete-apropos">A propos</h1>
+        <a href="#" id="titre-apropos">A propos</a>
         <div class="apropos">
             <div class="desc">
                 <p>Bienvenue sur mon portfolio</p>
                 <h2>Salut, <span>Sissoko ibrahima</span> </h2>
                 <p>Develppeur web junior</p>
-                <p>Titulaire d'une Licence en Méthodes Informatiques Appliquées à la Gestion des
-                            Entreprises (MIAGE), je suis actuellement en formation Développement Fullstack
-                            chez ODK, où je renforce mes compétences en front-end et back-end.<br>
-                            Motivé, curieux et rigoureux, je souhaite évoluer en tant que développeur
-                            fullstack et contribuer activement à des projets innovants et performants.</p>    
-                <a href="">Télécharger mon CV</a>
+                <p id="expli">Titulaire d'une Licence en Méthodes Informatiques Appliquées à la Gestion des
+                Entreprises (MIAGE), je suis actuellement en formation Développement Fullstack chez ODK.</p>    
+                <div class="social">
+                    <a href="" class="social-icon"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="" class="social-icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="" class="social-icon"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <!-- <div class="btn">
+                    <a href="" class="btn-telecharger">Télécharger mon CV</a>
+                </div> -->
             </div>
             <div class="img-apropos">
                 <!-- <img src="/images/ibrahima.png" alt=""> -->
             </div>
         </div>
-        
     </section>
+    <section id="Mes services">
+        <a href="#" id="titre-services">Services</a>
+        <div class="services">
+            <div class="container">
+                <div class="card">
+                    <a href=""><span class="material-symbols-outlined">code</span></a>
+                    <h2>Developpeur Front-end</h2>
+                    <p>HTML, CSS, JAVASCRIPT</p>
+                </div>
+
+                <div class="card">
+                    <a href=""><span class="material-symbols-outlined">brush</span></a>
+                    <h2>Designer Graphique</h2>
+                    <p>PHOTOSHOP, ILLUSTRATOR, PREMIERE PRO, CANVA</p>   
+                                 
+                </div>
+
+                <div class="card">                    
+                    <a href=""><span class="material-symbols-outlined">storage</span></a>
+                    <h2>Developpeur Back-end</h2>
+                    <p>PHP, MySQL</p> 
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
 </html>
