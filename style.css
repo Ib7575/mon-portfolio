@@ -112,7 +112,7 @@ header{
     align-items: center;
     justify-content: space-between;
     margin-bottom: 90px;
-    height: calc(100vh - 50px);
+    height: calc(100vh - 200px);
     padding: 0 80px 0 100px;
     position: relative;
 }
@@ -151,6 +151,14 @@ header{
 .apropos h2{
     color: #7e7d7d;
 }
+.container-apropos{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
 
 .desc h2 span{
     font-size: 45px;
@@ -165,7 +173,8 @@ header{
     justify-content: center;
     gap: 20px;
     position: absolute;
-    bottom: 50px;
+    bottom: 0;
+    left: 90px;
 }
 .social-icon{
     display: flex;
@@ -221,10 +230,14 @@ header{
     padding: 20px;
     border-radius: 50px;
     text-decoration: none;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     background: #a94ecd;
     color: var(--couleur-texte);
     transition: 0.3s;
+    position: absolute;
+    left: 100px;
+    bottom: -50px;
+    z-index: 99;
 }
 .btn-telecharger:hover{
     box-shadow: 0 0 30px rgba(134, 29, 199, 0.863);
@@ -245,11 +258,7 @@ header{
 #expli{
     margin-bottom: 50px;
 }
-#services{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 #titre-services{
     position: relative;
     padding: 50px 0 0 50px;
@@ -257,6 +266,7 @@ header{
     text-decoration: none;
     font-size: 40px;
     color: #fff;
+    margin-bottom: 300px;
 }
 #titre-services::after{
     position: absolute;
@@ -274,3 +284,47 @@ header{
     cursor: pointer;
     transform: scaleZ(1.1);
 }
+.container-services{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    flex: 1;
+    min-height: 200px;
+    max-width: 300px;
+    border: 3px solid #9a2bf5;
+    background: transparent;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.card:hover{
+    box-shadow: 0 0 50px #9a2bf5;
+    cursor: pointer;
+}
+.card a span{
+    font-size: 40px;
+    color: #9a2bf5;
+}
+.card h2{
+    color: var(--couleur-texte);
+}
+.card p{
+    color: var(--couleur-texte);
+}
+/* @media(max-width: 576px){
+    body{
+        font-size: 15px;
+        background-color: #fff;
+    }
+    img{
+        width: 50px;
+    }
+    .apropos{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+} */
